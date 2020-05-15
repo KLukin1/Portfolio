@@ -1,0 +1,32 @@
+
+body {
+    color: #fff;
+    background-color: #1C2833;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.title {
+    background-color: #17202A;
+    font-size: 25px;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+.projects {
+    text-align: center;
+}
+
+    .projects .project-row {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .projects .project-row h3 {
+        font-size: 18px;
+    }
+
+    .projects img {
+        height: 150px;
+        width: 250px;
+    }
