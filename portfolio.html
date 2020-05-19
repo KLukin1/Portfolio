@@ -2,41 +2,170 @@
 <html>
 <head>
     <title>Portfolio</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
 
 <body>
 
-    <div class="title">
-        <h1>Klara Lukin</h1>
-        <h3>Software Developer</h3>
+    <div class="title-container">
+        <span class="name">Klara <span class="blue-color">Lukin</span></span>
+        <div class="title">
+            <h1>Software <span class="blue-color">Developer</span></h1>
+            <span class="location"><i class="fa fa-map-marker-alt blue-color"></i> Wien, Österreich</span>
+            <div class="row sites">
+                <div class="col" onclick="window.location.href='https://github.com/KLukin1'">
+                    <i class="fab fa-github"></i><br />
+                    <span>GitHub</span>
+                </div>
+                <div class="col" onclick="window.location.href='https://www.linkedin.com/in/klara-l-802115186/'">
+                    <i class="fab fa-linkedin-in"></i><br />
+                    <span>LinkedIn</span>
+                </div>
+                <div class="col">
+                    <i class="fa fa-file-alt"></i><br />
+                    <span>Resume</span>
+                </div>
+            </div>
+        </div>
     </div>
     <div class="projects container">
+        <span class="projects-title">Projects</span>
         <div class="row project-row">
             <div class="col">
-                <img src="thumbnail-book-store.png" />
-                <h3>Book Store</h3>
+                <a href="https://book-store-ui.azurewebsites.net/">
+                    <img src="thumbnail-book-store.png" />
+                </a><br />
+                <a href="https://book-store-ui.azurewebsites.net/">Live Preview&nbsp;&nbsp;<i class="fa fa-desktop"></i></a>
+                <a href="https://github.com/KLukin1/BookStore" class="github">View Code&nbsp;<i class="fab fa-github"></i></a>
+                <ul class="tech">
+                    Technologies used:
+                    <li>Angular8</li>
+                    <li>C#</li>
+                    <li>SQL</li>
+                    <li>WEB API</li>
+                </ul>
             </div>
-            <div class="col">
-                <img src="thumbnail-td-gaj.png" />
-                <h3>"TD-Gaj" Orchestra</h3>
-            </div>
-            <div class="col">
-                <img src="thumbnail-omnifood.png" />
-                <h3>Omnifood</h3>
+            <div class="col description">
+                <h2>Book Store</h2>
+                <span class="date">May 2020</span>
+                <h3>Project</h3>
+                <p>Exercise project for Online Book Store.</p>
+                <h3>Features</h3>
+                <ul>
+                    <li>Registration and Log In form, authentication</li>
+                    <li>Adding Books to Basket</li>
+                    <li>Database with Books and Users using WEB API</li>
+                    <li>Searching bar</li>
+                    <li>Sorting Books by name or price</li>
+                </ul>
             </div>
         </div>
         <div class="row project-row">
             <div class="col">
-                <img src="thumbnail-budgety.png" />
-                <h3>Budgety</h3>
+                <a href="https://td-gaj.azurewebsites.net/">
+                    <img src="thumbnail-td-gaj.png" />
+                </a><br />
+                <a href="https://td-gaj.azurewebsites.net/">Live Preview&nbsp;&nbsp;<i class="fa fa-desktop"></i></a>
+                <a href="https://github.com/djurosaur/td-gaj" class="github">View Code&nbsp;<i class="fab fa-github"></i></a>
+                <ul class="tech">
+                    Technologies used:
+                    <li>JS</li>
+                    <li>C#</li>
+                    <li>MVC</li>
+                    <li>SQL</li>
+                    <li>WEB API</li>
+                </ul>
             </div>
-            <div class="col">
-                <img src="thumbnail-dice-game.png" />
-                <h3>Dice Game</h3>
+            <div class="col description">
+                <h2>"TD-Gaj" Orchestra</h2>
+                <span class="date">March 2020</span>
+                <h3>Project</h3>
+                <p>Web application for Croatian orchestra "TD Gaj".</p>
+                <h3>Features</h3>
+                <ul>
+                    <li>Administration page with Log In form</li>
+                    <li>Adding and organizing new content through Database</li>
+                    <li>Showing videos with Youtube API</li>
+                </ul>
             </div>
+        </div>
+        <div class="row project-row">
             <div class="col">
+                <a href="https://omnifood-restaurant.azurewebsites.net/">
+                    <img src="thumbnail-omnifood.png" />
+                </a><br />
+                <a href="https://omnifood-restaurant.azurewebsites.net/">Live Preview&nbsp;&nbsp;<i class="fa fa-desktop"></i></a>
+                <a href="https://github.com/KLukin1/Omnifood" class="github">View Code&nbsp;<i class="fab fa-github"></i></a>
+                <ul class="tech">
+                    Technologies used:
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JS</li>
+                </ul>
+            </div>
+            <div class="col description">
+                <h2>Omnifood</h2>
+                <span class="date">September 2019</span>
+                <h3>Project</h3>
+                <p>Premium food delivery service. Project from Udemy course.</p>
+                <h3>Features</h3>
+                <ul>
+                    <li>Responsive design</li>
+                    <li>Button redirecting on specific location on page</li>
+                </ul>
+            </div>
+        </div>
+        <div class="row project-row">
+            <div class="col">
+                <a href="https://budgety-app.azurewebsites.net/">
+                    <img src="thumbnail-budgety.png" />
+                </a><br />
+                <a href="https://budgety-app.azurewebsites.net/">Live Preview&nbsp;&nbsp;<i class="fa fa-desktop"></i></a>
+                <a href="https://github.com/KLukin1/Budgety" class="github">View Code&nbsp;<i class="fab fa-github"></i></a>
+                <ul class="tech">
+                    Technologies used:
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JS</li>
+                </ul>
+            </div>
+            <div class="col description">
+                <h2>Budgety</h2>
+                <span class="date">October 2019</span>
+                <h3>Project</h3>
+                <p>Budgety gives you an organised way of managing your finances.</p>
+                <h3>Features</h3>
+                <ul>
+                    <li>Adding and removing an income/expenses</li>
+                    <li>Calculating expenditure percentage</li>
+                </ul>
+            </div>
+        </div>
+        <div class="row project-row">
+            <div class="col">
+                <a href="https://dice-game.azurewebsites.net/">
+                    <img src="thumbnail-dice-game.png" />
+                </a><br />
+                <a href="https://dice-game.azurewebsites.net/">Live Preview&nbsp;&nbsp;<i class="fa fa-desktop"></i></a>
+                <a href="https://github.com/KLukin1/DiceGame" class="github">View Code&nbsp;<i class="fab fa-github"></i></a>
+                <ul class="tech">
+                    Technologies used:
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JS</li>
+                </ul>
+            </div>
+            <div class="col description">
+                <h2>Dice Game</h2>
+                <span class="date">October 2019</span>
+                <h3>Project</h3>
+                <p>Each turn, a player repeatedly rolls a die until either a 1 is rolled or the player decides to "hold". The game provides exercises for teaching Computer Science in areas ranging from introductory courses to advanced machine learning material.</p>
+                <h3>Features</h3>
+                <ul>
+                    <li>Choose a winning score</li>
+                </ul>
             </div>
         </div>
     </div>
