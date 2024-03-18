@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
     <title>Portfolio</title>
@@ -10,20 +10,20 @@
 <body>
 
     <div class="title-container">
-        <span class="name">Klara <span class="blue-color">Lukin</span></span>
+        <span class="name">Klara <span class="blue-color">Đurić</span></span>
         <div class="title">
             <h1>Software <span class="blue-color">Developer</span></h1>
-            <span class="location"><i class="fa fa-map-marker-alt blue-color"></i> Wien, �sterreich</span>
+            <span class="location"><i class="fa fa-map-marker-alt blue-color"></i> Zagreb, Hrvatska</span>
             <div class="row sites">
-                <div class="col" onclick="window.location.href='https://github.com/KLukin1'">
+                <div class="col" onclick="window.open('https://github.com/KLukin1')">
                     <i class="fab fa-github"></i><br />
                     <span>GitHub</span>
                 </div>
-                <div class="col" onclick="window.location.href='https://www.linkedin.com/in/klara-l-802115186/'">
+                <div class="col" onclick="window.open('https://www.linkedin.com/in/klara-duric-802115186/')">
                     <i class="fab fa-linkedin-in"></i><br />
                     <span>LinkedIn</span>
                 </div>
-                <div class="col">
+                <div class="col" onclick="window.open('klara_duric_cv.docx.pdf')">
                     <i class="fa fa-file-alt"></i><br />
                     <span>Resume</span>
                 </div>
@@ -34,11 +34,34 @@
         <span class="projects-title">Projects</span>
         <div class="row project-row">
             <div class="col">
-                <a href="https://book-store-ui.azurewebsites.net/">
+                <a href="https://www.completevan.ie/" target="_blank">
+                    <img src="thumbnail-completevan.png" />
+                </a><br />
+                <a href="https://www.completevan.ie/" target="_blank">Live Preview&nbsp;&nbsp;<i class="fa fa-desktop"></i></a>
+                <ul class="tech">
+                    Technologies used:
+                    <li>Hugo</li>
+                </ul>
+            </div>
+            <div class="col description">
+                <h2>Complete Van</h2>
+                <span class="date">May 2021</span>
+                <h3>Project</h3>
+                <p>"Complete Van" website</p>
+                <h3>Features</h3>
+                <ul>
+                    <li>Administration page for news management</li>
+                    <li>Receiving and answering customer questions</li>
+                </ul>
+            </div>
+        </div>
+        <div class="row project-row">
+            <div class="col">
+                <a href="https://book-store-ui.azurewebsites.net/" target="_blank">
                     <img src="thumbnail-book-store.png" />
                 </a><br />
-                <a href="https://book-store-ui.azurewebsites.net/">Live Preview&nbsp;&nbsp;<i class="fa fa-desktop"></i></a>
-                <a href="https://github.com/KLukin1/BookStore" class="github">View Code&nbsp;<i class="fab fa-github"></i></a>
+                <a href="https://book-store-ui.azurewebsites.net/" target="_blank">Live Preview&nbsp;&nbsp;<i class="fa fa-desktop"></i></a>
+                <a href="https://github.com/KLukin1/BookStore" target="_blank" class="github">View Code&nbsp;<i class="fab fa-github"></i></a>
                 <ul class="tech">
                     Technologies used:
                     <li>Angular8</li>
@@ -64,40 +87,11 @@
         </div>
         <div class="row project-row">
             <div class="col">
-                <a href="https://td-gaj.azurewebsites.net/">
-                    <img src="thumbnail-td-gaj.png" />
-                </a><br />
-                <a href="https://td-gaj.azurewebsites.net/">Live Preview&nbsp;&nbsp;<i class="fa fa-desktop"></i></a>
-                <a href="https://github.com/djurosaur/td-gaj" class="github">View Code&nbsp;<i class="fab fa-github"></i></a>
-                <ul class="tech">
-                    Technologies used:
-                    <li>JS</li>
-                    <li>C#</li>
-                    <li>MVC</li>
-                    <li>SQL</li>
-                    <li>WEB API</li>
-                </ul>
-            </div>
-            <div class="col description">
-                <h2>"TD-Gaj" Orchestra</h2>
-                <span class="date">March 2020</span>
-                <h3>Project</h3>
-                <p>Web application for Croatian orchestra "TD Gaj".</p>
-                <h3>Features</h3>
-                <ul>
-                    <li>Administration page with Log In form</li>
-                    <li>Adding and organizing new content through Database</li>
-                    <li>Showing videos with Youtube API</li>
-                </ul>
-            </div>
-        </div>
-        <div class="row project-row">
-            <div class="col">
-                <a href="https://omnifood-restaurant.azurewebsites.net/">
+                <a href="https://omnifood-restaurant.azurewebsites.net/" target="_blank">
                     <img src="thumbnail-omnifood.png" />
                 </a><br />
-                <a href="https://omnifood-restaurant.azurewebsites.net/">Live Preview&nbsp;&nbsp;<i class="fa fa-desktop"></i></a>
-                <a href="https://github.com/KLukin1/Omnifood" class="github">View Code&nbsp;<i class="fab fa-github"></i></a>
+                <a href="https://omnifood-restaurant.azurewebsites.net/ target="_blank"">Live Preview&nbsp;&nbsp;<i class="fa fa-desktop"></i></a>
+                <a href="https://github.com/KLukin1/Omnifood" target="_blank" class="github">View Code&nbsp;<i class="fab fa-github"></i></a>
                 <ul class="tech">
                     Technologies used:
                     <li>HTML</li>
@@ -118,11 +112,11 @@
         </div>
         <div class="row project-row">
             <div class="col">
-                <a href="https://budgety-app.azurewebsites.net/">
+                <a href="https://budgety-app.azurewebsites.net/" target="_blank">
                     <img src="thumbnail-budgety.png" />
                 </a><br />
-                <a href="https://budgety-app.azurewebsites.net/">Live Preview&nbsp;&nbsp;<i class="fa fa-desktop"></i></a>
-                <a href="https://github.com/KLukin1/Budgety" class="github">View Code&nbsp;<i class="fab fa-github"></i></a>
+                <a href="https://budgety-app.azurewebsites.net/" target="_blank">Live Preview&nbsp;&nbsp;<i class="fa fa-desktop"></i></a>
+                <a href="https://github.com/KLukin1/Budgety" target="_blank" class="github">View Code&nbsp;<i class="fab fa-github"></i></a>
                 <ul class="tech">
                     Technologies used:
                     <li>HTML</li>
@@ -144,11 +138,11 @@
         </div>
         <div class="row project-row">
             <div class="col">
-                <a href="https://dice-game.azurewebsites.net/">
+                <a href="https://dice-game.azurewebsites.net/" target="_blank">
                     <img src="thumbnail-dice-game.png" />
                 </a><br />
-                <a href="https://dice-game.azurewebsites.net/">Live Preview&nbsp;&nbsp;<i class="fa fa-desktop"></i></a>
-                <a href="https://github.com/KLukin1/DiceGame" class="github">View Code&nbsp;<i class="fab fa-github"></i></a>
+                <a href="https://dice-game.azurewebsites.net/" target="_blank">Live Preview&nbsp;&nbsp;<i class="fa fa-desktop"></i></a>
+                <a href="https://github.com/KLukin1/DiceGame" target="_blank" class="github">View Code&nbsp;<i class="fab fa-github"></i></a>
                 <ul class="tech">
                     Technologies used:
                     <li>HTML</li>
