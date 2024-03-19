@@ -19,6 +19,17 @@ body {
         font-weight: 500;
     }
 
+    .title-container .language-change {
+        font-size: 20px;
+        padding-right: 30px;
+        font-weight: 500;
+        float: right;
+    }
+
+        .title-container .language-change a {
+            color: #fff;
+        }
+
 .title {
     margin: 0 auto;
     width: 280px;
