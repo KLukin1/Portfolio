@@ -1,6 +1,11 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
+    <meta charset="UTF-8">
+    <meta name="HandheldFriendly" content="true" />
+    <meta name="MobileOptimized" content="320" />
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, user-scalable=no" />
+
     <title>Portfolio</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
@@ -10,46 +15,39 @@
 <body>
 
     <div class="title-container">
-        <span class="name">Klara <span class="blue-color">Đurić</span></span>
-        <span class="language-change"><a href="./index.html">HR</a></span>
-        <div class="title">
-            <h1>Software <span class="blue-color">Developer</span></h1>
-            <span class="location"><i class="fa fa-map-marker-alt blue-color"></i> Zagreb, Croatia</span>
-            <div class="row sites">
-                <div class="col" onclick="window.open('https://github.com/KLukin1')">
-                    <i class="fab fa-github"></i><br />
-                    <span>GitHub</span>
-                </div>
-                <div class="col" onclick="window.open('https://www.linkedin.com/in/klara-duric-802115186/')">
-                    <i class="fab fa-linkedin-in"></i><br />
-                    <span>LinkedIn</span>
-                </div>
-                <div class="col" onclick="window.open('klara_duric_cv.docx.pdf')">
-                    <i class="fa fa-file-alt"></i><br />
-                    <span>Resume</span>
+        <div class="title-center container">
+            <span class="name">Klara <span class="blue-color">Đurić</span></span>
+            <span class="language-change"><a href="./index.html">HR</a></span>
+            <div class="title">
+                <h1>Software <span class="blue-color">Developer</span></h1>
+                <span class="location"><i class="fa fa-map-marker-alt blue-color"></i> Zagreb, Croatia</span>
+                <div class="row sites">
+                    <div class="col" onclick="window.open('https://github.com/KLukin1')">
+                        <i class="fab fa-github"></i><br />
+                        <span>GitHub</span>
+                    </div>
+                    <div class="col" onclick="window.open('https://www.linkedin.com/in/klara-duric-802115186/')">
+                        <i class="fab fa-linkedin-in"></i><br />
+                        <span>LinkedIn</span>
+                    </div>
+                    <div class="col" onclick="window.open('klara_duric_cv.docx.pdf')">
+                        <i class="fa fa-file-alt"></i><br />
+                        <span>Resume</span>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
     <div class="projects container">
         <span class="projects-title">Employment</span>
-        <div class="row project-row">
-            <div class="col">
+
+        <div class="flex-container project-row">
+            <div class="project-image">
                 <a>
                     <img src="anypay24_logo.jpg" />
                 </a><br />
-                    <ul class="tech">
-                        Technologies used:
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>JavaScript</li>
-                        <li>jQuery</li>
-                        <li>PHP</li>
-                        <li>PostgreSQL</li>
-                        <li>Jira</li>
-                    </ul>
             </div>
-            <div class="col description">
+            <div class="description">
                 <h2>AnyPay24</h2>
                 <span class="date">September 2021 - August 2023</span>
                 <h3>Software Developer</h3>
@@ -58,25 +56,23 @@
                     <li>Data management of employees and clients; access control</li>
                     <li>Product and stock management; control of the contents of the vending machine</li>
                     <li>Transaction overview, data analysis and reports</li>
+                    <li>Tehnologies: HTML, CSS, JavaScript, jQuery, PHP, PostgreSQL, Jira</li>
                 </ul>
             </div>
         </div>
-        <div class="row project-row">
-            <div class="col">
+        <div class="flex-container project-row">
+            <div class="project-image">
                 <a href="https://www.completevan.ie/" target="_blank">
                     <img src="thumbnail-completevan.png" />
                 </a><br />
                 <a href="https://www.completevan.ie/" target="_blank">Live Preview&nbsp;&nbsp;<i class="fa fa-desktop"></i></a>
-                <ul class="tech">
-                    Technologies used:
-                    <li>Hugo</li>
-                </ul>
             </div>
-            <div class="col description">
+            <div class="description">
                 <h2>Complete Van</h2>
                 <span class="date">February 2021 - May 2021</span>
                 <h3>Freelance Developer</h3>
                 <ul>
+                    <li>Web site development using Hugo framework</li>
                     <li>Administration page for news management</li>
                     <li>Receiving and answering customer questions</li>
                 </ul>
@@ -84,23 +80,15 @@
         </div>
 
         <span class="projects-title">Projects</span>
-        <div class="row project-row">
-            <div class="col">
-                <a href="https://book-store-ui.azurewebsites.net/" target="_blank">
+        <div class="flex-container project-row">
+            <div class="project-image">
+                <a href="https://portfolio-bookstore.azurewebsites.net/" target="_blank">
                     <img src="thumbnail-book-store.png" />
                 </a><br />
-                <a href="https://book-store-ui.azurewebsites.net/" target="_blank">Live Preview&nbsp;&nbsp;<i class="fa fa-desktop"></i></a>
+                <a href="https://portfolio-bookstore.azurewebsites.net/" target="_blank">Live Preview&nbsp;&nbsp;<i class="fa fa-desktop"></i></a>
                 <a href="https://github.com/KLukin1/BookStore" target="_blank" class="github">View Code&nbsp;<i class="fab fa-github"></i></a>
-                <ul class="tech">
-                    Technologies used:
-                    <li>Angular</li>
-                    <li>C#, .NET Core</li>
-                    <li>SQL</li>
-                    <li>WEB API</li>
-                    <li>JWT</li>
-                </ul>
             </div>
-            <div class="col description">
+            <div class="description">
                 <h2>Book Store</h2>
                 <span class="date">May 2020</span>
                 <h3>Project</h3>
@@ -112,24 +100,19 @@
                     <li>Database with Books and Users using WEB API</li>
                     <li>Search bar</li>
                     <li>Sorting Books by name or price</li>
+                    <li>Tehnologies: Angular, C#, SQL, WEB API, JWT</li>
                 </ul>
             </div>
         </div>
-        <div class="row project-row">
-            <div class="col">
+        <div class="flex-container project-row">
+            <div class="project-image">
                 <a href="https://omnifood-restaurant.azurewebsites.net/" target="_blank">
                     <img src="thumbnail-omnifood.png" />
                 </a><br />
                 <a href="https://omnifood-restaurant.azurewebsites.net/ target=" _blank"">Live Preview&nbsp;&nbsp;<i class="fa fa-desktop"></i></a>
                 <a href="https://github.com/KLukin1/Omnifood" target="_blank" class="github">View Code&nbsp;<i class="fab fa-github"></i></a>
-                <ul class="tech">
-                    Technologies used:
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JS</li>
-                </ul>
             </div>
-            <div class="col description">
+            <div class="description">
                 <h2>Omnifood</h2>
                 <span class="date">September 2019</span>
                 <h3>Project</h3>
@@ -137,24 +120,19 @@
                 <h3>Features</h3>
                 <ul>
                     <li>Responsive design</li>
+                    <li>Tehnologies: HTML, CSS, JavaScript</li>
                 </ul>
             </div>
         </div>
-        <div class="row project-row">
-            <div class="col">
+        <div class="flex-container project-row">
+            <div class="project-image">
                 <a href="https://budgety-app.azurewebsites.net/" target="_blank">
                     <img src="thumbnail-budgety.png" />
                 </a><br />
                 <a href="https://budgety-app.azurewebsites.net/" target="_blank">Live Preview&nbsp;&nbsp;<i class="fa fa-desktop"></i></a>
                 <a href="https://github.com/KLukin1/Budgety" target="_blank" class="github">View Code&nbsp;<i class="fab fa-github"></i></a>
-                <ul class="tech">
-                    Technologies used:
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JS</li>
-                </ul>
             </div>
-            <div class="col description">
+            <div class="description">
                 <h2>Budgety</h2>
                 <span class="date">October 2019</span>
                 <h3>Project</h3>
@@ -163,24 +141,19 @@
                 <ul>
                     <li>Adding and removing an income/expenses</li>
                     <li>Calculating expenditure percentage</li>
+                    <li>Tehnologies: HTML, CSS, JavaScript</li>
                 </ul>
             </div>
         </div>
-        <div class="row project-row">
-            <div class="col">
+        <div class="flex-container project-row">
+            <div class="project-image">
                 <a href="https://dice-game.azurewebsites.net/" target="_blank">
                     <img src="thumbnail-dice-game.png" />
                 </a><br />
                 <a href="https://dice-game.azurewebsites.net/" target="_blank">Live Preview&nbsp;&nbsp;<i class="fa fa-desktop"></i></a>
                 <a href="https://github.com/KLukin1/DiceGame" target="_blank" class="github">View Code&nbsp;<i class="fab fa-github"></i></a>
-                <ul class="tech">
-                    Technologies used:
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JS</li>
-                </ul>
             </div>
-            <div class="col description">
+            <div class="description">
                 <h2>Dice Game</h2>
                 <span class="date">October 2019</span>
                 <h3>Project</h3>
@@ -188,6 +161,7 @@
                 <h3>Features</h3>
                 <ul>
                     <li>Choose a winning score</li>
+                    <li>Tehnologies: HTML, CSS, JavaScript</li>
                 </ul>
             </div>
         </div>

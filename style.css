@@ -13,6 +13,11 @@ body {
     padding: 30px 0;
 }
 
+    .title-container .title-center {
+        width: 1000px;
+        margin: 0 auto;
+    }
+
     .title-container .name {
         font-size: 20px;
         padding-left: 30px;
@@ -122,13 +127,114 @@ body {
         margin-bottom: 10px;
     }
 
-    .projects .tech {
-        margin-top: 20px;
-        text-align: left;
-        margin-left: 100px;
-        font-weight: 500;
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+    .flex-container div {
+        flex: 1 1 0px;
     }
 
-        .projects .tech li {
-            font-weight: 400;
-        }
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    .projects img {
+        height: 110px;
+        width: 200px;
+    }
+
+    .flex-container {
+        flex-direction: column;
+    }
+
+    .projects .projects-title {
+        margin-bottom: 0px;
+    }
+
+    .project-row .project-image {
+        margin-bottom: 15px;
+    }
+}
+
+@media only screen and (min-width: 400px) and (max-width: 575px) {
+    .container {
+        max-width: 350px;
+    }
+
+    .title-container .name {
+        padding-left: 0px;
+    }
+
+    .title-container .language-change {
+        padding-right: 0px;
+    }
+
+    .title {
+        width: auto;
+    }
+
+    .flex-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .projects .projects-title {
+        width: 300px;
+        margin-bottom: 0px;
+    }
+
+    .project-row .project-image {
+        margin: 0 auto 15px auto;
+    }
+}
+
+@media only screen and (max-width: 399px) {
+    .container {
+        max-width: 250px;
+    }
+
+    .title-container .name {
+        padding-left: 0px;
+    }
+
+    .title-container .language-change {
+        padding-right: 0px;
+    }
+
+    .title {
+        width: auto;
+    }
+
+    .flex-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .projects .projects-title {
+        width: 200px;
+        margin-bottom: 0px;
+    }
+
+    .projects img {
+        height: 110px;
+        width: 200px;
+    }
+
+    .project-row .project-image {
+        margin: 0 auto 15px auto;
+    }
+
+    .projects .project-row .description {
+        text-align: center;
+    }
+
+    .description ul,
+    .description p {
+        text-align: left;
+    }
+
+    .projects .github {
+        display: block;
+        margin-left: 0px;
+    }
+}

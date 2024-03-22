@@ -1,6 +1,11 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
+    <meta charset="UTF-8">
+    <meta name="HandheldFriendly" content="true" />
+    <meta name="MobileOptimized" content="320" />
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, user-scalable=no" />
+
     <title>Portfolio</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
@@ -10,46 +15,39 @@
 <body>
 
     <div class="title-container">
-        <span class="name">Klara <span class="blue-color">Đurić</span></span>
-        <span class="language-change"><a href="./index_en.html">EN</a></span>
-        <div class="title">
-            <h1>Software <span class="blue-color">Developer</span></h1>
-            <span class="location"><i class="fa fa-map-marker-alt blue-color"></i> Zagreb, Hrvatska</span>
-            <div class="row sites">
-                <div class="col" onclick="window.open('https://github.com/KLukin1')">
-                    <i class="fab fa-github"></i><br />
-                    <span>GitHub</span>
-                </div>
-                <div class="col" onclick="window.open('https://www.linkedin.com/in/klara-duric-802115186/')">
-                    <i class="fab fa-linkedin-in"></i><br />
-                    <span>LinkedIn</span>
-                </div>
-                <div class="col" onclick="window.open('klara_duric_cv.docx.pdf')">
-                    <i class="fa fa-file-alt"></i><br />
-                    <span>Životopis</span>
+        <div class="title-center container">
+            <span class="name">Klara <span class="blue-color">Đurić</span></span>
+            <span class="language-change"><a href="./index_en.html">EN</a></span>
+            <div class="title">
+                <h1>Software <span class="blue-color">Developer</span></h1>
+                <span class="location"><i class="fa fa-map-marker-alt blue-color"></i> Zagreb, Hrvatska</span>
+                <div class="row sites">
+                    <div class="col" onclick="window.open('https://github.com/KLukin1')">
+                        <i class="fab fa-github"></i><br />
+                        <span>GitHub</span>
+                    </div>
+                    <div class="col" onclick="window.open('https://www.linkedin.com/in/klara-duric-802115186/')">
+                        <i class="fab fa-linkedin-in"></i><br />
+                        <span>LinkedIn</span>
+                    </div>
+                    <div class="col" onclick="window.open('klara_duric_cv.docx.pdf')">
+                        <i class="fa fa-file-alt"></i><br />
+                        <span>Životopis</span>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
     <div class="projects container">
         <span class="projects-title">Zaposlenja</span>
-        <div class="row project-row">
-            <div class="col">
+
+        <div class="flex-container project-row">
+            <div class="project-image">
                 <a>
                     <img src="anypay24_logo.jpg" />
                 </a><br />
-                <ul class="tech">
-                    Tehnologije:
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JavaScript</li>
-                    <li>jQuery</li>
-                    <li>PHP</li>
-                    <li>PostgreSQL</li>
-                    <li>Jira</li>
-                </ul>
             </div>
-            <div class="col description">
+            <div class="description">
                 <h2>AnyPay24</h2>
                 <span class="date">Rujan 2021 - Kolovoz 2023</span>
                 <h3>Software Developer</h3>
@@ -58,21 +56,18 @@
                     <li>Upravljanje podacima o zaposlenicima, klijentima i kontrola pristupa</li>
                     <li>Upravljanje proizvodima, zalihama i kontrola sadržaja automata</li>
                     <li>Pregled transakcija, analiza podataka i izrada izvještaja</li>
+                    <li>Tehnologije i alati: HTML, CSS, JavaScript, jQuery, PHP, PostgreSQL, Jira</li>
                 </ul>
             </div>
         </div>
-        <div class="row project-row">
-            <div class="col">
+        <div class="flex-container project-row">
+            <div class="project-image">
                 <a href="https://www.completevan.ie/" target="_blank">
                     <img src="thumbnail-completevan.png" />
                 </a><br />
                 <a href="https://www.completevan.ie/" target="_blank">Pregled uživo&nbsp;&nbsp;<i class="fa fa-desktop"></i></a>
-                <ul class="tech">
-                    Tehnologije:
-                    <li>Hugo</li>
-                </ul>
             </div>
-            <div class="col description">
+            <div class="description">
                 <h2>Complete Van</h2>
                 <span class="date">Veljača 2021 - Svibanj 2021</span>
                 <h3>Freelance Developer</h3>
@@ -85,23 +80,16 @@
         </div>
 
         <span class="projects-title">Osobni Projekti</span>
-        <div class="row project-row">
-            <div class="col">
-                <a href="https://book-store-ui.azurewebsites.net/" target="_blank">
+
+        <div class="flex-container project-row">
+            <div class="project-image">
+                <a href="https://portfolio-bookstore.azurewebsites.net/" target="_blank">
                     <img src="thumbnail-book-store.png" />
                 </a><br />
-                <a href="https://book-store-ui.azurewebsites.net/" target="_blank">Pregled uživo&nbsp;&nbsp;<i class="fa fa-desktop"></i></a>
+                <a href="https://portfolio-bookstore.azurewebsites.net/" target="_blank">Pregled uživo&nbsp;&nbsp;<i class="fa fa-desktop"></i></a>
                 <a href="https://github.com/KLukin1/BookStore" target="_blank" class="github">Pregled koda&nbsp;<i class="fab fa-github"></i></a>
-                <ul class="tech">
-                    Tehnologije:
-                    <li>Angular8</li>
-                    <li>C#</li>
-                    <li>SQL</li>
-                    <li>WEB API</li>
-                    <li>JWT</li>
-                </ul>
             </div>
-            <div class="col description">
+            <div class="description">
                 <h2>Book Store</h2>
                 <span class="date">Svibanj 2020</span>
                 <h3>Osobni Projekt</h3>
@@ -113,24 +101,19 @@
                     <li>Baza podataka, korištenje WEB API-ja</li>
                     <li>Pretraživanje knjiga po nazivu ili autoru</li>
                     <li>Razvrstavanje knjiga po nazivu ili cijeni</li>
+                    <li>Tehnologije i alati: Angular, C#, SQL, WEB API, JWT</li>
                 </ul>
             </div>
         </div>
-        <div class="row project-row">
-            <div class="col">
+        <div class="flex-container project-row">
+            <div class="project-image">
                 <a href="https://omnifood-restaurant.azurewebsites.net/" target="_blank">
                     <img src="thumbnail-omnifood.png" />
                 </a><br />
                 <a href="https://omnifood-restaurant.azurewebsites.net/" target="_blank">Pregled uživo&nbsp;&nbsp;<i class="fa fa-desktop"></i></a>
                 <a href="https://github.com/KLukin1/Omnifood" target="_blank" class="github">Pregled kôda&nbsp;<i class="fab fa-github"></i></a>
-                <ul class="tech">
-                    Tehnologije:
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JS</li>
-                </ul>
             </div>
-            <div class="col description">
+            <div class="description">
                 <h2>Omnifood</h2>
                 <span class="date">Rujan 2019</span>
                 <h3>Udemy Projekt</h3>
@@ -138,24 +121,19 @@
                 <h3>Značajke</h3>
                 <ul>
                     <li>Responzivni dizajn</li>
+                    <li>Tehnologije i alati: HTML, CSS, JavaScript</li>
                 </ul>
             </div>
         </div>
-        <div class="row project-row">
-            <div class="col">
+        <div class="flex-container project-row">
+            <div class="project-image">
                 <a href="https://budgety-app.azurewebsites.net/" target="_blank">
                     <img src="thumbnail-budgety.png" />
                 </a><br />
                 <a href="https://budgety-app.azurewebsites.net/" target="_blank">Pregled uživo&nbsp;&nbsp;<i class="fa fa-desktop"></i></a>
                 <a href="https://github.com/KLukin1/Budgety" target="_blank" class="github">Pregled kôda&nbsp;<i class="fab fa-github"></i></a>
-                <ul class="tech">
-                    Tehnologije:
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JS</li>
-                </ul>
             </div>
-            <div class="col description">
+            <div class="description">
                 <h2>Budgety</h2>
                 <span class="date">Listopad 2019</span>
                 <h3>Udemy Projekt</h3>
@@ -164,24 +142,20 @@
                 <ul>
                     <li>Dodavanje i uklanjanje prihoda/troškova</li>
                     <li>Izračunavanje postotka izdataka</li>
+                    <li>Tehnologije i alati: HTML, CSS, JavaScript</li>
                 </ul>
             </div>
         </div>
-        <div class="row project-row">
-            <div class="col">
+        <div class="flex-container project-row">
+            <div class="project-image">
                 <a href="https://portfolio-dice-game.azurewebsites.net/" target="_blank">
                     <img src="thumbnail-dice-game.png" />
                 </a><br />
                 <a href="https://portfolio-dice-game.azurewebsites.net/" target="_blank">Pregled uživo&nbsp;&nbsp;<i class="fa fa-desktop"></i></a>
                 <a href="https://github.com/KLukin1/DiceGame" target="_blank" class="github">Pregled kôda&nbsp;<i class="fab fa-github"></i></a>
-                <ul class="tech">
-                    Tehnologije:
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JS</li>
                 </ul>
             </div>
-            <div class="col description">
+            <div class="description">
                 <h2>Igra s kockicama</h2>
                 <span class="date">Listopad 2019</span>
                 <h3>Udemy Projekt</h3>
@@ -189,6 +163,7 @@
                 <h3>Značajke</h3>
                 <ul>
                     <li>Odabir pobjedničkog rezultata</li>
+                    <li>Tehnologije i alati: HTML, CSS, JavaScript</li>
                 </ul>
             </div>
         </div>
