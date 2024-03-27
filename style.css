@@ -108,9 +108,9 @@ body {
         margin-bottom: 10px;
     }
 
-        .projects img:hover {
-            opacity: 0.7;
-        }
+    .projects .img-opacity:hover {
+        opacity: 0.7;
+    }
 
     .projects .github {
         margin-left: 15px;
